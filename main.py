@@ -5,6 +5,12 @@ import os
 from dotenv import load_dotenv
 from discord.ext import commands
 
+ydl_opts = {
+    'cookiefile': 'cookies.txt',
+}
+
+with yt_dlp.YoutubeDL(ydl_opts) as ydl:
+    ydl.download(['<URL>'])
 
 discord.opus.load_opus('/usr/lib/x86_64-linux-gnu/libopus.so.0')
 
