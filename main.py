@@ -6,7 +6,8 @@ from dotenv import load_dotenv
 from discord.ext import commands
 
 # Указываем путь к opus библиотеке (если требуется)
-discord.opus.load_opus('/opt/homebrew/lib/libopus.dylib')
+# discord.opus.load_opus('/opt/homebrew/lib/libopus.dylib')
+discord.opus.load_opus('/usr/lib/x86_64-linux-gnu/libopus.so.0')
 
 # Загрузка переменных из файла .env
 load_dotenv()
